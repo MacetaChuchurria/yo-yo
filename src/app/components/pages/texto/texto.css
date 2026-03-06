@@ -1,0 +1,16 @@
+.message-box {
+  max-width: 600px;
+  line-height: 1.6;
+  font-size: 1.3rem;
+  animation: fadeInSlide 1.5s ease-out forwards;
+}
+
+@keyframes fadeInSlide {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }      100% {
+           opacity: 1;
+           transform: translateY(0);
+         }
+}
