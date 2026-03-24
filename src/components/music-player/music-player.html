@@ -1,0 +1,11 @@
+<div class="music-fab" (click)="togglePlay()" [ngClass]="{'playing': isPlaying}">
+  <span class="icon" *ngIf="!isPlaying">▶️</span>
+  <span class="icon" *ngIf="isPlaying">⏸️</span>
+  <span class="music-note" *ngIf="isPlaying">♪</span>
+  <span class="music-note two" *ngIf="isPlaying">♫</span>
+</div>
+
+<audio #audioPlayer loop>
+  <source src="../../app/assets/musica.mp3" type="audio/mpeg">
+  Tu navegador no soporta el elemento de audio.
+</audio>

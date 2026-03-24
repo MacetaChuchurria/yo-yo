@@ -1,0 +1,50 @@
+.music-fab {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 60px;
+  height: 60px;
+  background-color: #d63384;
+  border-radius: 50%;
+  box-shadow: 0 5px 15px rgba(214, 51, 132, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  z-index: 1000;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.music-fab:hover {
+  transform: scale(1.1);
+  background-color: #bc2870;
+}
+
+.playing {
+  animation: pulse 2s infinite;
+}
+
+/* Animaciones de notas musicales flotantes */
+.music-note {
+  position: absolute;
+  color: #ffb703;
+  opacity: 0;
+  animation: floatNote 2s infinite linear;
+}
+
+.music-note.two {
+  animation-delay: 1s;
+}
+
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(214, 51, 132, 0.7); }
+  70% { box-shadow: 0 0 0 15px rgba(214, 51, 132, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(214, 51, 132, 0); }
+}
+
+@keyframes floatNote {
+  0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+  100% { transform: translateY(-40px) rotate(20deg); opacity: 0; }
+}

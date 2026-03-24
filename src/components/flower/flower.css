@@ -1,0 +1,10 @@
+.flower-container { display: flex; flex-direction: column; align-items: center; margin: 20px 0; }
+.flower { position: relative; width: 50px; height: 50px; animation: sway 3s ease-in-out infinite; }
+.petal { position: absolute; background: #ff4d6d; width: 30px; height: 30px; border-radius: 50% 50% 0 50%; }
+.one { transform: rotate(0deg); top: 0; left: 10px; }
+.two { transform: rotate(90deg); top: 10px; left: 20px; }
+.three { transform: rotate(180deg); top: 20px; left: 10px; }
+.four { transform: rotate(270deg); top: 10px; left: 0; }
+.center { position: absolute; top: 15px; left: 15px; width: 20px; height: 20px; background: #ffb703; border-radius: 50%; }
+.stem { width: 4px; height: 60px; background: #2d6a4f; border-radius: 2px; }
+@keyframes sway { 0%, 100% { transform: rotate(-5deg); } 50% { transform: rotate(5deg); } }
