@@ -1,34 +1,14 @@
-body, html {
+
+body {
   margin: 0;
   padding: 0;
-  height: 100%;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #fff5f7;
-  color: #333;
+  background-color: #fdf2f2;
+  font-family: 'Montserrat', sans-serif;
+  color: #4a4a4a;
+  overflow-x: hidden;
 }
 
-.container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  text-align: center;
-  padding: 20px;
-}
-
-button {
-  padding: 12px 24px;
-  font-size: 1.2rem;
-  background-color: #ff4d6d;
-  color: white;
-  border: none;
-  border-radius: 25px;
-  cursor: pointer;
-  transition: transform 0.2s;
-}
-
-button:hover {
-  transform: scale(1.05);
-  background-color: #ff758f;
+.romantic-title {
+  font-family: 'Dancing Script', cursive;
+  color: #d63384;
 }

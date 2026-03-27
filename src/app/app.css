@@ -1,0 +1,24 @@
+/* ===== Forzar scroll correcto de página ===== */
+html, body {
+  height: auto;
+  min-height: 100%;
+  margin: 0;
+  overflow-y: auto;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+/* Angular root */
+app-root {
+  display: block;
+  min-height: 100%;
+  overflow: visible;
+}
+
+/* Router wrapper (muy común que atrape scroll) */
+router-outlet + * {
+  display: block;
+  overflow: visible;
+}

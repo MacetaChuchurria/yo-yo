@@ -329,3 +329,51 @@ footer {
   .main-content p { text-align: left; /* Mejor legibilidad en móvil */ }
   .reveal-box { font-size: 1.1em; padding: 15px; }
 }
+
+/* Efecto Rayos de Sol (Dorado/Amarillo brillante) */
+.effect-sun-rays {
+  color: #f9d71c;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(249, 215, 28, 0.6);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Efecto Brillo de Luna (Plateado/Azul suave) */
+.effect-moon-glow {
+  color: #9db2bf;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(157, 178, 191, 0.8);
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Contenedor del regalo celestial */
+.gift-section {
+  margin: 30px 0;
+  border-top: 1px solid #f2e3e9;
+  padding-top: 20px;
+}
+
+.celestial-box {
+  background: linear-gradient(135deg, #fff5f8 0%, #f0f4ff 100%);
+  border-radius: 15px;
+  padding: 25px;
+  border: 1px solid #e0e6ed;
+  box-shadow: inset 0 0 15px rgba(214, 51, 132, 0.05);
+  margin-top: 15px;
+}
+
+.gift-highlight {
+  font-style: italic;
+  font-size: 1.05rem;
+  color: #555;
+  border-top: 1px dashed #d63384;
+  padding-top: 15px;
+  margin-top: 15px;
+  text-align: center !important;
+}
+
+/* Ajuste para el tesoro de One Piece que habías puesto en <p> */
+.effect-treasure {
+  display: inline-block;
+  margin: 0;
+}
